@@ -1,0 +1,7 @@
+CREATE database notes_db;
+USE notes_db;
+CREATE TABLE `notes` (
+  `id` bigint auto_increment primary_key,
+  `title` text not null,
+  `note` longtext not null;
+);
