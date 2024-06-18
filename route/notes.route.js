@@ -1,10 +1,12 @@
 import express from "express";
 import {
-    addNotes,
-    deleteNotes,
     getNotes,
+    addNotes,
     updateNotes,
+    deleteNotes,
+    
 } from "../controller/notes.route.js";
+import router from "./index.js";
 
 const router = express.Router();
 

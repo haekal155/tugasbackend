@@ -9,7 +9,6 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
-
 app.listen(process.env.APP_PORT, async () => {
     await testConnection();
     console.log(`http://localhost:${process.env.APP_PORT}`);
