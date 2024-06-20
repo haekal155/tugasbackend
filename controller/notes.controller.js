@@ -2,7 +2,7 @@ import { query } from "../Database/db.js";
 
 export const getNotes = async (req, res) => {
     try {
-        const result= await query('select * from notes');
+        const result= await query("SELECT * FROM notes");
         return res.status(200).json({ success: true, data: result });
     } catch (e) {
         console.error("Terjadi kesalahan:", e);
